@@ -1,13 +1,51 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=League+Spartan:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&display=swap');
+:root{
+  --white-theme:#FFFFFF;
+  --black-theme:#37362C;
+  --yellow-theme:#FFE73F;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "League Spartan", sans-serif;
+}
+body{
+  background-color: #3B4664;
+}
+button{
+  border: none;
+}
+.App{
+  max-width: 430px;
+  margin: auto;
+}
+.text--theme-dark{
+  color: var(--white-theme);
+}
+.text--theme-light{
+  color: var(--black-theme);
+}
+.text--theme-purple{
+  color: var(--yellow-theme);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn__background-theme-dark{
+  background-color: #D13F30;
+}
+.btn__background-theme-light{
+  background-color: #C85401;
+}
+.btn__background-theme-purple{
+  background-color: #00DECF;
+}
+
+.primary__background-theme-dark{
+  background-color: #252D45;
+}
+.primary__background-theme-light{
+  background-color: #D3CDCD;
+}
+.primary__background-theme-purple{
+  background-color: #1E0836;
 }

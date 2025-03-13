@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header__title{
+    align-self: flex-end;
+    font-size: 25px;
+}
+.header__theme-switch{
+    display: grid;
+    grid-template: 20px 25px / 60px 70px;
+    font-size: 12px;
+}
+.header__text{
+    grid-row-start: 2;
+    align-self: center;
+}
+.header__switch-nums{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    grid-area: 1/2;
+}
+.header__btn{
+    position: relative;
+    grid-area: 2/2;
+    border-radius: 20px;
+}
+.header__circle{
+    position: absolute;
+    top: 15%;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+}
