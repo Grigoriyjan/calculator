@@ -12,14 +12,9 @@ const Header = ({theme, toggleTheme}) =>{
 
         const switcher = event.currentTarget.getBoundingClientRect();
         let newX = event.clientX - switcher.left;
-
-        // Ограничиваем движение в пределах 0-100%
-        newX = Math.max(0, Math.min(newX, switcher.width - 17)); // 20 - ширина кружка
+        newX = Math.max(0, Math.min(newX, switcher.width - 17));
         setPosition(newX);
-
-        // Определяем переключение темы (например, три позиции: 0, 50, 100)
         if (newX < switcher.width / 3) {
-            
             setPosition(4)
             toggleTheme("dark");
         } else if (newX < (2 * switcher.width) / 3) {
@@ -31,7 +26,7 @@ const Header = ({theme, toggleTheme}) =>{
         }
     };
     return (
-        <header className={`header text--theme-${theme}`}>
+        <header className={`header text__theme-${theme}`}>
             <h2 className="header__title">calc</h2>
             <div className="header__theme-switch">
                 <p className="header__text">THEME</p>
@@ -41,6 +36,7 @@ const Header = ({theme, toggleTheme}) =>{
                     <div className="header__num">3</div>
                 </div>
                 <div 
+                    onMouseLeave={handleMouseUp}
                     onMouseMove={handleMouseMove}
                     onMouseUp={handleMouseUp}
                     className={`header__btn primary__background-theme-${theme}`}>

@@ -34,4 +34,5 @@
     height: 17px;
     border-radius: 50%;
     cursor: pointer;
+    transition: left 0.3s ease;
 }

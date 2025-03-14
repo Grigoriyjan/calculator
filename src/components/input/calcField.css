@@ -1,0 +1,20 @@
+.calc-input{
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: right;
+    border: none;
+}
+.calc-input__theme-dark{
+    background-color: #181F32;
+}
+.calc-input__theme-light{
+    background-color: #EEEEEE;
+}
+.calc-input__theme-purple{
+    background-color: var(--pruple-bg);
+}

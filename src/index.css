@@ -3,41 +3,68 @@
   --white-theme:#FFFFFF;
   --black-theme:#37362C;
   --yellow-theme:#FFE73F;
+  --pruple-bg:#1E0836;
 }
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "League Spartan", sans-serif;
+  transition: backround-color 0.3s ease, color 0.1s ease;
 }
-body{
+.App{
+  height: 100vh;
+}
+.App__bg-theme-dark{
   background-color: #3B4664;
+}
+.App__bg-theme-light{
+  background-color: #E6E6E6;
+}
+.App__bg-theme-purple{
+  background-color: #17062A;
 }
 button{
   border: none;
 }
-.App{
+.container{
   max-width: 430px;
   margin: auto;
 }
-.text--theme-dark{
+.text__theme-dark{
   color: var(--white-theme);
 }
-.text--theme-light{
+.text__theme-light{
   color: var(--black-theme);
 }
-.text--theme-purple{
+.text__theme-purple{
   color: var(--yellow-theme);
 }
 
-.btn__background-theme-dark{
+.btn__background-theme-dark,
+.btn__third-theme-dark{
   background-color: #D13F30;
 }
-.btn__background-theme-light{
+.btn__background-theme-light,
+.btn__third-theme-light{
   background-color: #C85401;
 }
-.btn__background-theme-purple{
+.btn__background-theme-purple,
+.btn__third-theme-purple{
   background-color: #00DECF;
+}
+
+.btn__background-theme-dark:hover,
+.btn__third-theme-dark:hover{
+  background-color: #F96C5B;
+}
+.btn__background-theme-light:hover,
+.btn__third-theme-light:hover{
+  background-color: #FF8B38;
+}
+.btn__background-theme-purple:hover,
+.btn__third-theme-purple:hover{
+  background-color: #94FFF9;
 }
 
 .primary__background-theme-dark{
@@ -48,4 +75,10 @@ button{
 }
 .primary__background-theme-purple{
   background-color: #1E0836;
+}
+
+@media (max-width: 450px) {
+    .container{
+      max-width: 360px;
+    }
 }
