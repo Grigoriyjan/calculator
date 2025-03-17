@@ -10,8 +10,8 @@ const CalcField = ({theme, inputValue, onInputChange, calc}) =>{
         <input 
             type="text" 
             className={`calc-input calc-input__theme-${theme} text__theme-${theme}`} 
-            value={inputValue}
             onChange={onInputChange}
+            value={inputValue}
             onKeyDown={handleKeyDown}
         />
     )
